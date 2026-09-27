@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CheckFirst — a calmer next step</title>
+  <meta name="description" content="An eleven-slide university project pitch for CheckFirst, an educational social engineering checker. Includes speaker notes and printable slides.">
+  <style>
+    :root{color-scheme:light;--ink:#102e35;--paper:#f6f3eb;--green:#c5ef8a;--muted:#4c6266;--line:#b9c5bd}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#d6ded8;color:var(--ink);font-family:Arial,Helvetica,sans-serif}button{font:inherit}a{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid #de7400;outline-offset:5px}
+    main{max-width:1600px;margin:auto}.slide{position:relative;isolation:isolate;min-height:720px;aspect-ratio:16/9;padding:6% 7%;background:var(--paper);margin:24px 0;overflow:hidden}.slide.dark{background:var(--ink);color:var(--paper)}.slide.green{background:var(--green)}
+    .eyebrow{font-size:clamp(14px,1.2vw,20px);letter-spacing:.12em;text-transform:uppercase;margin:0 0 34px;font-weight:700}.dark .eyebrow{color:var(--green)}h1,h2,h3,p{margin:0}h1{font-size:clamp(64px,7.5vw,120px);line-height:.96;letter-spacing:-.065em}h2{font-size:clamp(36px,4.8vw,76px);line-height:1.04;letter-spacing:-.05em;max-width:1100px}h3{font-size:clamp(24px,2.25vw,36px);line-height:1.15;letter-spacing:-.035em}.lede{font-size:clamp(23px,2.65vw,42px);line-height:1.28;max-width:1060px;margin-top:36px;letter-spacing:-.02em}.body{font-size:clamp(19px,1.8vw,28px);line-height:1.4;max-width:920px;margin-top:24px}.quiet{color:var(--muted)}.dark .quiet{color:#c0d1cb}.accent{color:#9cce63}.dark .accent{color:var(--green)}
+    .cover h1{margin-top:45px}.cover .lede{max-width:840px}.cover .signature{position:absolute;left:7%;bottom:11%;font-size:clamp(16px,1.4vw,22px);line-height:1.6}.page{position:absolute;right:6%;bottom:5%;font-size:16px;letter-spacing:.12em}.statement{max-width:980px;font-size:clamp(36px,4.4vw,70px);line-height:1.1;letter-spacing:-.035em;margin-top:52px}.rows{margin-top:45px}.row{display:grid;grid-template-columns:65px 1fr 1.2fr;gap:28px;padding:22px 0;border-top:1px solid var(--line);align-items:start}.row .number{font-size:30px;color:var(--muted)}.row p{font-size:clamp(19px,1.65vw,26px);line-height:1.35}.row:last-child{border-bottom:1px solid var(--line)}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:8%;margin-top:50px}.split p{font-size:clamp(19px,1.8vw,28px);line-height:1.4;margin-top:18px}.big-word{font-size:clamp(38px,4.6vw,72px);letter-spacing:-.045em;line-height:1.08}.quote{font-size:clamp(29px,3.4vw,54px);line-height:1.2;letter-spacing:-.03em;max-width:970px;margin-top:45px}.quote code{font-family:inherit;overflow-wrap:anywhere}.note{font-size:clamp(16px,1.35vw,21px);line-height:1.4;margin-top:32px;max-width:1040px}.simple-list{list-style:none;padding:0;margin:38px 0 0}.simple-list li{font-size:clamp(23px,2.5vw,40px);line-height:1.35;padding:12px 0}.simple-list li span{display:inline-block;min-width:45px;color:var(--muted)}.dark .simple-list li span{color:var(--green)}
+    .status-table{border-collapse:collapse;width:100%;margin-top:38px;font-size:clamp(17px,1.65vw,26px);line-height:1.3}.status-table th{text-align:left;font-weight:400;color:var(--muted);font-size:.8em;letter-spacing:.07em;text-transform:uppercase}.status-table td,.status-table th{padding:15px 18px 15px 0;border-bottom:1px solid var(--line)}.status-table td:first-child{font-weight:700;width:35%}.status-table td:last-child{width:34%}.slide-notes{display:none}.read-notes .slide-notes{display:block;margin-top:38px;border-top:1px solid currentColor;padding-top:18px;font-size:18px;line-height:1.5}.read-notes .slide-notes p+p{margin-top:12px}
+    .toolbar{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:5;display:none;gap:8px;align-items:center;padding:8px 12px;background:#fff;color:var(--ink);border:1px solid #bac7c1;box-shadow:0 6px 30px #0002;border-radius:6px;font-size:14px;white-space:nowrap}.toolbar button{border:0;background:#e9efe8;padding:8px 12px;cursor:pointer;border-radius:3px}.toolbar button:disabled{opacity:.4;cursor:default}.toolbar output{min-width:50px;text-align:center}.js .toolbar{display:flex}.js.presenting main{max-width:none}.js.presenting .slide{display:none;margin:0;min-height:100vh;aspect-ratio:auto;padding-top:5vh;padding-bottom:10vh}.js.presenting .slide.active{display:block}.js.presenting .slide h1{font-size:clamp(66px,8vw,132px)}.js.presenting .page{bottom:7%}.js.presenting .cover .signature{bottom:16%}.js.overview main{padding-bottom:80px}.js.read-notes .slide{aspect-ratio:auto;overflow:visible;min-height:720px}
+    @media(max-width:760px){.slide{padding:36px 25px 65px;min-height:620px;aspect-ratio:auto;margin:10px 0}h1{font-size:62px}h2{font-size:40px}.lede{font-size:25px}.body,.row p,.split p{font-size:20px}.eyebrow{font-size:13px;margin-bottom:24px}.split{grid-template-columns:1fr;gap:24px;margin-top:30px}.rows{margin-top:28px}.row{grid-template-columns:32px 1fr;gap:12px;padding:17px 0}.row p{grid-column:2}.row .number{font-size:23px}.simple-list li{font-size:25px}.quote{font-size:30px;margin-top:30px}.statement{font-size:40px;margin-top:30px}.cover .signature{position:static;margin-top:65px}.js.presenting .cover .signature{position:static}.js.presenting .slide{min-height:100vh;padding:34px 25px 100px}.js.presenting .slide h1{font-size:62px}.status-table{font-size:16px}.status-table td,.status-table th{padding:12px 8px 12px 0}.toolbar{gap:4px;padding:6px;font-size:12px;max-width:calc(100% - 12px);white-space:normal}.toolbar button{padding:8px}.toolbar .desktop-control{display:none}.page{font-size:13px}.note{font-size:16px}}
+    @media print{@page{size:320mm 180mm;margin:0}body{background:white;print-color-adjust:exact;-webkit-print-color-adjust:exact}main,.js.presenting main{max-width:none;padding:0!important}.toolbar{display:none!important}.slide,.js.presenting .slide,.js.presenting .slide.active,.js.read-notes .slide{display:block!important;width:320mm;height:180mm;min-height:0;margin:0;padding:16mm 22mm;aspect-ratio:auto;break-after:page;page-break-after:always;overflow:hidden}.slide:last-child{break-after:auto}.eyebrow{font-size:13pt;margin-bottom:8mm}h1,.js.presenting .slide h1{font-size:78pt}h2{font-size:42pt}.lede{font-size:26pt;margin-top:10mm}.body{font-size:19pt}.cover h1{margin-top:15mm}.cover .signature,.js.presenting .cover .signature{position:absolute;bottom:19mm;font-size:15pt}.row{padding:5mm 0;gap:6mm}.rows,.split{margin-top:10mm}.row p,.split p{font-size:18pt}h3{font-size:23pt}.quote{font-size:31pt;margin-top:10mm}.note{font-size:13pt;margin-top:7mm}.statement{font-size:42pt;margin-top:14mm}.simple-list{margin-top:10mm}.simple-list li{font-size:24pt;padding:3mm 0}.status-table{font-size:17pt;margin-top:9mm}.status-table td,.status-table th{padding:4mm 5mm 4mm 0}.page,.js.presenting .page{font-size:10pt;bottom:9mm}.slide-notes,.read-notes .slide-notes{display:none!important}}
+  </style>
+</head>
+<body>
+<main aria-label="CheckFirst pitch presentation">
+  <section class="slide dark cover" id="slide-1" aria-labelledby="title-1">
+    <p class="eyebrow">University work-experience project</p>
+    <h1 id="title-1">CheckFirst</h1>
+    <p class="lede">A calmer next step when a message, link or phone call feels wrong.</p>
+    <p class="signature">Social engineering guidance for everyday users<br><span class="quiet">Company and community pilot proposal · September 2026</span></p>
+    <span class="page" aria-hidden="true">01</span>
+    <aside class="slide-notes"><p>CheckFirst is a university work-experience project designed for people who do not work in cybersecurity. It helps someone pause, examine warning signs and choose a sensible next step. This is a prototype and a proposal for a supervised pilot. No company, university endorsement, customer deployment or measured impact is claimed.</p></aside>
+  </section>
+  <section class="slide" id="slide-2" aria-labelledby="title-2">
+    <p class="eyebrow">The user problem</p>
+    <h2 id="title-2">Pressure arrives in familiar places</h2>
+    <p class="statement">An urgent email.<br>A delivery text.<br>A convincing caller.<br>A QR code at the wrong moment.</p>
+    <p class="note quiet">People need an understandable explanation before they respond.</p>
+    <span class="page" aria-hidden="true">02</span>
+    <aside class="slide-notes"><p>These are illustrative situations, not a prevalence claim. A message can borrow a familiar name, add urgency and ask the recipient to act before checking. CheckFirst provides a place to stop and examine the request. The intended audiences include students, staff, community members and people supporting less technical relatives.</p></aside>
+  </section>
+  <section class="slide green" id="slide-3" aria-labelledby="title-3">
+    <p class="eyebrow">The experience</p>
+    <h2 id="title-3">Understand the warning.<br>Choose the next step.</h2>
+    <div class="rows">
+      <div class="row"><span class="number">01</span><h3>Bring the concern</h3><p>A link, message, .eml email, phone number or QR image.</p></div>
+      <div class="row"><span class="number">02</span><h3>Read the explanation</h3><p>See the warning signs and what the tool could not check.</p></div>
+      <div class="row"><span class="number">03</span><h3>Verify independently</h3><p>Use a known contact channel before sharing information or paying.</p></div>
+    </div>
+    <span class="page" aria-hidden="true">03</span>
+    <aside class="slide-notes"><p>The five input modes are links, messages, email files, phone numbers and QR images. A QR image is decoded locally so its content can be examined without opening the destination. Phone interpretation includes country clarification. The value is an understandable explanation and a route to independent verification. CheckFirst uses local rules to highlight features such as pressure and unusual link structure. Results must be read as guidance. An ordinary-looking message can still be harmful. A warning sign can also appear in legitimate communication.</p></aside>
+  </section>
+  <section class="slide" id="slide-4" aria-labelledby="title-4">
+    <p class="eyebrow">Fictional demonstration</p>
+    <h2 id="title-4">“Your parcel is on hold”</h2>
+    <p class="quote">“Confirm your details and pay now.<br><code>parcel-help.example/verify</code>.”</p>
+    <div class="split"><div><h3>What to examine</h3><p>Payment pressure, a request for personal details and an unfamiliar domain.</p></div><div><h3>What to do next</h3><p>Open the delivery company’s known website or contact it using details you already trust.</p></div></div>
+    <p class="note quiet">Illustrative explanation. The reserved .example address is plain text and must not be visited.</p>
+    <span class="page" aria-hidden="true">04</span>
+    <aside class="slide-notes"><p>For the live demo, use the application's supplied fictional sample so the audience sees the actual output, including its exact rule wording. This slide explains the example rather than reproducing a screenshot or promising an exact verdict. Do not use real customer messages or live malicious addresses in the presentation. Show the incomplete-check notice as part of the demo.</p></aside>
+  </section>
+  <section class="slide dark" id="slide-5" aria-labelledby="title-5">
+    <p class="eyebrow">Honest results</p>
+    <h2 id="title-5">A useful explanation includes its limits</h2>
+    <ul class="simple-list">
+      <li><span>01</span> Warning signs need context.</li>
+      <li><span>02</span> Caller identity cannot be proved by a number.</li>
+      <li><span>03</span> No warning found does not mean safe.</li>
+      <li><span>04</span> Unavailable checks remain visible.</li>
+    </ul>
+    <p class="note quiet">Live phishing intelligence is disabled in this version.</p>
+    <span class="page" aria-hidden="true">05</span>
+    <aside class="slide-notes"><p>A phone country helps interpret number format, but cannot establish who is calling. The application cannot certify a link or verify the identity of a sender. OpenPhish was evaluated but is not enabled. Its terms require permission for certain commercial uses, product development and third-party disclosure. Do not describe the project as having live threat intelligence. Source reviewed 26 September 2026: https://openphish.com/terms.html. See ../SETUP.md for the maintained integration decision.</p></aside>
+  </section>
+  <section class="slide" id="slide-6" aria-labelledby="title-6">
+    <p class="eyebrow">Privacy by design</p>
+    <h2 id="title-6">Analysis starts on the user’s device</h2>
+    <div class="split"><div><h3>Within the browser</h3><p>Local analysis of submitted content.<br><br>No application database.<br><br>No account required to try the tool.</p></div><div><h3>Before sharing a report</h3><p>Use the redacted export.<br><br>Check it for identifying details.<br><br>Share only what is needed.</p></div></div>
+    <p class="note quiet">Email content is treated as text. Remote email images and suspicious links are not opened automatically.</p>
+    <span class="page" aria-hidden="true">06</span>
+    <aside class="slide-notes"><p>Local analysis avoids sending submitted content to a third-party analysis service. A deployed host still receives normal website requests and connection metadata. Local processing does not guarantee anonymity or erase browser and operating-system history. Redaction is a minimisation step, not a guarantee that every identifying detail has been removed. The user should review the exported report before sharing it.</p></aside>
+  </section>
+  <section class="slide" id="slide-7" aria-labelledby="title-7">
+    <p class="eyebrow">Delivery model</p>
+    <h2 id="title-7">A small service footprint</h2>
+    <table class="status-table"><thead><tr><th>Component</th><th>Purpose</th><th>Current scope</th></tr></thead><tbody>
+      <tr><td>Browser application</td><td>Explain local warning signs</td><td>No external account needed</td></tr>
+      <tr><td>GitHub</td><td>Source and automated checks</td><td>Owner connection pending</td></tr>
+      <tr><td>Cloudflare Pages</td><td>Website and source-status route</td><td>Deployment pending</td></tr>
+      <tr><td>Phishing feed</td><td>Potential future evidence</td><td>Disabled</td></tr>
+      <tr><td>Supabase</td><td>No current requirement</td><td>Not used</td></tr>
+    </tbody></table>
+    <p class="note quiet">Free-tier deployment is the starting assumption. Account terms and usage still apply.</p>
+    <span class="page" aria-hidden="true">07</span>
+    <aside class="slide-notes"><p>The service architecture is deliberately small. Source belongs in GitHub and the intended host is Cloudflare Pages using Git integration. Functions expose status information without claiming a live reputation check. No deployment or successful account connection is claimed here. The setup guide contains current requirements, plan limits and the owner's outstanding actions. A free tier is not a universal spending guarantee. Supabase is not required for this version. No account or database setup is necessary.</p></aside>
+  </section>
+  <section class="slide green" id="slide-8" aria-labelledby="title-8">
+    <p class="eyebrow">Potential partner value</p>
+    <h2 id="title-8">A conversation starter for safer habits</h2>
+    <div class="rows">
+      <div class="row"><span class="number">01</span><h3>For employees</h3><p>Explain a suspicious request in accessible language.</p></div>
+      <div class="row"><span class="number">02</span><h3>For educators</h3><p>Demonstrate warning signs using fictional scenarios.</p></div>
+      <div class="row"><span class="number">03</span><h3>For support teams</h3><p>Help a user describe what concerned them.</p></div>
+    </div>
+    <p class="note">These benefits are hypotheses for a pilot. Impact has not yet been measured.</p>
+    <span class="page" aria-hidden="true">08</span>
+    <aside class="slide-notes"><p>Position CheckFirst as education and decision support that can sit alongside an organisation's established reporting and security processes. Do not claim that it replaces an email gateway, incident response, identity verification or professional advice. A pilot should determine whether the explanations are understood and whether people know when to use the organisation's reporting route.</p></aside>
+  </section>
+  <section class="slide" id="slide-9" aria-labelledby="title-9">
+    <p class="eyebrow">Proposed pilot</p>
+    <h2 id="title-9">Test comprehension before expansion</h2>
+    <div class="split"><div><h3>One supervised workshop</h3><p>Invite a small voluntary group.<br><br>Use fictional links, messages and email files.<br><br>Observe the steps users find confusing.</p></div><div><h3>Questions to measure</h3><p>Can users explain one warning sign?<br><br>Do they understand an incomplete check?<br><br>Can they choose an independent verification step?</p></div></div>
+    <p class="note quiet">Agree the evaluation and university requirements before recruitment. Collect feedback without raw submissions.</p>
+    <span class="page" aria-hidden="true">09</span>
+    <aside class="slide-notes"><p>This is a proposed study, not a commitment or a completed evaluation. Agree participant information, consent, any university ethics requirements, retention and a feedback process first. Count task completion and comprehension against predefined questions. Record confusing wording and accessibility barriers. Do not promise a percentage reduction in attacks from this exercise. No raw emails or personal contact data are needed for the proposed pilot.</p></aside>
+  </section>
+  <section class="slide" id="slide-10" aria-labelledby="title-10">
+    <p class="eyebrow">University work experience</p>
+    <h2 id="title-10">A project with reviewable deliverables</h2>
+    <div class="rows">
+      <div class="row"><span class="number">01</span><h3>Working product</h3><p>A local application with fictional examples and clear limitations.</p></div>
+      <div class="row"><span class="number">02</span><h3>Reproducible setup</h3><p>Source, dependency lockfile, automated checks and deployment guidance.</p></div>
+      <div class="row"><span class="number">03</span><h3>Evidence for improvement</h3><p>A verification checklist and a proposal for user feedback.</p></div>
+    </div>
+    <span class="page" aria-hidden="true">10</span>
+    <aside class="slide-notes"><p>The work-experience story is the process of turning a user need into a maintainable product. The reviewable outputs are the application, setup documentation, test evidence and this presentation. Live deployment and pilot results should only be added once they exist. The documentation distinguishes configured, locally tested, deployed and pending service states. Demonstrate the actual repository and checklist where appropriate.</p></aside>
+  </section>
+  <section class="slide dark" id="slide-11" aria-labelledby="title-11">
+    <p class="eyebrow">The invitation</p>
+    <h2 id="title-11">Help make the next step clearer</h2>
+    <p class="lede">We are seeking a pilot partner to review the language, try fictional scenarios and share structured feedback.</p>
+    <p class="body quiet">A small workshop. A defined audience.<br>A clear decision about what to improve next.</p>
+    <p class="note accent">Next meeting: agree the audience, facilitator and success criteria.</p>
+    <span class="page" aria-hidden="true">11</span>
+    <aside class="slide-notes"><p>Make a specific, modest ask: a partner contact who can help arrange a supervised workshop and a review of the wording. Agree audience, facilitator and evaluation criteria. Do not imply an existing commercial relationship. If the audience is prospective end users, adapt the closing verbally to invite feedback through an approved channel selected by the project owner. No contact details have been invented for this deck.</p></aside>
+  </section>
+</main>
+<nav class="toolbar" aria-label="Presentation controls">
+  <button type="button" id="previous" aria-label="Previous slide">Previous</button>
+  <output id="position" aria-live="polite">1 / 11</output>
+  <button type="button" id="next" aria-label="Next slide">Next</button>
+  <button type="button" id="overview" aria-pressed="false">Overview</button>
+  <button type="button" id="notes" aria-pressed="false">Notes</button>
+  <button type="button" id="fullscreen" class="desktop-control">Full screen</button>
+  <button type="button" id="print" class="desktop-control">Print</button>
+</nav>
+<script>
+  (() => {
+    const root = document.documentElement;
+    const slides = [...document.querySelectorAll('.slide')];
+    const previous = document.querySelector('#previous');
+    const next = document.querySelector('#next');
+    const position = document.querySelector('#position');
+    const overview = document.querySelector('#overview');
+    const notes = document.querySelector('#notes');
+    let current = Math.max(0, Math.min(slides.length - 1, Number(location.hash.match(/^#slide-(\d+)$/)?.[1] || 1) - 1));
+    let isOverview = false;
+    root.classList.add('js', 'presenting');
+    const show = (index) => {
+      current = Math.max(0, Math.min(slides.length - 1, index));
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === current);
+        slide.setAttribute('aria-hidden', String(!isOverview && i !== current));
+      });
+      position.value = `${current + 1} / ${slides.length}`;
+      previous.disabled = current === 0;
+      next.disabled = current === slides.length - 1;
+      try { history.replaceState(null, '', `#slide-${current + 1}`); } catch { /* Local previews can restrict history. */ }
+      if (isOverview) slides[current].scrollIntoView({block: 'start'});
+      else window.scrollTo(0, 0);
+    };
+    const setOverview = (value) => {
+      isOverview = value;
+      root.classList.toggle('overview', value);
+      root.classList.toggle('presenting', !value);
+      overview.setAttribute('aria-pressed', String(value));
+      show(current);
+    };
+    previous.addEventListener('click', () => show(current - 1));
+    next.addEventListener('click', () => show(current + 1));
+    overview.addEventListener('click', () => setOverview(!isOverview));
+    notes.addEventListener('click', () => {
+      const enabled = root.classList.toggle('read-notes');
+      notes.setAttribute('aria-pressed', String(enabled));
+      if (enabled) setOverview(true);
+    });
+    document.querySelector('#fullscreen').addEventListener('click', async () => {
+      try {
+        if (document.fullscreenElement) await document.exitFullscreen();
+        else await document.documentElement.requestFullscreen();
+      } catch { document.querySelector('#fullscreen').textContent = 'Use browser full screen'; }
+    });
+    document.querySelector('#print').addEventListener('click', () => window.print());
+    window.addEventListener('keydown', (event) => {
+      if (event.altKey || event.ctrlKey || event.metaKey || /^(INPUT|TEXTAREA|SELECT|BUTTON)$/.test(event.target.tagName)) return;
+      if (['ArrowRight', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(current + 1); }
+      if (['ArrowLeft', 'PageUp'].includes(event.key)) { event.preventDefault(); show(current - 1); }
+      if (event.key === 'Home') { event.preventDefault(); show(0); }
+      if (event.key === 'End') { event.preventDefault(); show(slides.length - 1); }
+      if (event.key.toLowerCase() === 'o') setOverview(!isOverview);
+    });
+    window.addEventListener('hashchange', () => {
+      const match = location.hash.match(/^#slide-(\d+)$/);
+      if (match) show(Number(match[1]) - 1);
+    });
+    show(current);
+  })();
+</script>
+</body>
+</html>

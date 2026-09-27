@@ -1,0 +1,12 @@
+From: Example Delivery <notice@delivery.example>
+To: Example Recipient <person@example.com>
+Reply-To: help@different.example
+Date: Sat, 26 Sep 2026 09:00:00 +0000
+Subject: FICTIONAL EXAMPLE: urgent delivery fee
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This is a fictional training fixture. No real organisation or person is involved.
+Urgent: your parcel is suspended. Pay a delivery fee within 2 hours at
+https://delivery.example/verify?reference=fictional
+Send your verification code to complete the delivery.

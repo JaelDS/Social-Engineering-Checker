@@ -1,0 +1,13 @@
+From: Fictional Billing <billing@invoice-notice.example>
+To: Fictional Recipient <reader@example.com>
+Date: Sun, 27 Sep 2026 10:00:00 +0000
+Subject: FICTIONAL EXAMPLE: invoice requires payment
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html><body>
+<p>Urgent: pay the fictional invoice fee at
+<a href="http://invoice-notice.example/pay?training=only">this address</a>.</p>
+<p>This is a harmless training fixture. The .example address has no real service.</p>
+<img src="https://image-tracker.example/pixel?training=only" alt="">
+</body></html>

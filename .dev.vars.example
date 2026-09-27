@@ -1,0 +1,2 @@
+# No runtime variables or secrets are used by this version.
+# Do not add feed credentials: the live feed adapter is intentionally not implemented.

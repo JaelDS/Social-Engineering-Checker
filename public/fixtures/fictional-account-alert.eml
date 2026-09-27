@@ -1,0 +1,13 @@
+From: Account Notice <notice@account-alert.example>
+To: Fictional Recipient <reader@example.com>
+Reply-To: response@different.example
+Date: Sun, 27 Sep 2026 09:00:00 +0000
+Subject: FICTIONAL EXAMPLE: final warning about your account
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This is a fictional training message. No real organisation or account is involved.
+
+Final warning: your account will be suspended immediately. Confirm your
+password at https://account-alert.example/verify?training=only.
+Do not tell anyone about this message.

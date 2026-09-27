@@ -1,0 +1,35 @@
+{
+  "name": "checkfirst",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.11.0",
+  "engines": { "node": "24.18.0", "pnpm": "11.11.0" },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "preview:cloudflare": "pnpm build && wrangler pages dev dist --ip 127.0.0.1 --port 8788"
+  },
+  "dependencies": {
+    "jsqr": "1.4.0",
+    "libphonenumber-js": "1.13.14",
+    "postal-mime": "3.0.1",
+    "tldts": "7.4.15"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.19.0",
+    "eslint": "10.11.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.1",
+    "vite": "8.3.1",
+    "vitest": "5.0.2",
+    "wrangler": "4.141.0"
+  }
+}
